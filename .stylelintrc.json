@@ -1,0 +1,19 @@
+{
+    "extends": "/Users/mscherr/.node/lib/node_modules/stylelint-config-standard",
+    "rules": {
+        "color-hex-case": ["lower", { "severity": "warning" }],
+        "color-no-invalid-hex": true,
+        "declaration-block-no-duplicate-properties": true,
+        "declaration-block-properties-order": "alphabetical",
+        "declaration-block-no-shorthand-property-overrides": true,
+        "function-linear-gradient-no-nonstandard-direction": true,
+        "indentation": 4,
+        "number-leading-zero": null,
+        "function-name-case": null,
+        "rule-nested-empty-line-before": "never-multi-line",
+        "at-rule-empty-line-before": ["always", {
+            "except": ["all-nested", "blockless-group"]
+        }],
+        "declaration-empty-line-before": "never"
+    }
+}
