@@ -1,5 +1,7 @@
 extends:
-  - "prettier"
+  - "/Users/mscherr/.config/yarn/global/node_modules/eslint-config-prettier/index.js"
+parserOptions:
+  sourceType: module
 env:
   browser: true
   node: true
