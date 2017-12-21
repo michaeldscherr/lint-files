@@ -1,7 +1,17 @@
 extends:
-  - "/Users/mscherr/.config/yarn/global/node_modules/eslint-config-prettier/index.js"
+  - "prettier"
 parserOptions:
-  sourceType: module
+  sourceType: "module"
+plugins:
+  - "html"
+  - "vue"
+  - "import"
+settings:
+  "import/resolver": "webpack"
 env:
-  browser: true
-  node: true
+  "browser": true
+  "node": true
+rules:
+   "indent":
+    - "error"
+    - 4
