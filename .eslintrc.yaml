@@ -3,6 +3,7 @@ extends:
 parserOptions:
   sourceType: "module"
 plugins:
+  - "prettier"
   - "html"
   - "vue"
   - "import"

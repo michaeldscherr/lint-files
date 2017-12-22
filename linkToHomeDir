@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ln -sf $(pwd)/.eslintrc.yaml ~/.eslintrc.yaml
+ln -sf $(pwd)/.htmlhintrc.yaml ~/.htmlhintrc.yaml
+ln -sf $(pwd)/.prettierrc.yaml ~/.prettierrc.yaml
+ln -sf $(pwd)/.stylelintrc.yaml ~/.stylelintrc.yaml
