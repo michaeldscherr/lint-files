@@ -1,6 +1,16 @@
 #!/bin/bash
 
-ln -sf $(pwd)/.eslintrc.yaml ~/.eslintrc.yaml
-ln -sf $(pwd)/.htmlhintrc.yaml ~/.htmlhintrc.yaml
-ln -sf $(pwd)/.prettierrc.yaml ~/.prettierrc.yaml
-ln -sf $(pwd)/.stylelintrc.yaml ~/.stylelintrc.yaml
+files=(
+  .eslintrc.yaml
+  .htmlhintrc.yaml
+  .prettierrc.yaml
+  .stylelintrc.yaml
+)
+dir_to_link=$HOME
+dir_cur=$(pwd)
+
+for file in "${files[@]}"
+do
+  ln -sf $dir_cur/$file $dir_to_link/$file
+  echo "linked $file in $dir_to_link"
+done
